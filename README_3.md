@@ -329,26 +329,16 @@ print(weird_list)  # [1, 2, 3, [...]]
 recursive_lists.py
 
 
-20. Замыкания
+#### 20. **`closures.py`** - Замыкания
 
+```python
 def multiplier(factor):
-    
-   def inner(number):
-      
-   return number * factor
-    
-   return inner
+    def inner(number):
+        return number * factor
+    return inner
 
 double = multiplier(2)
-
 print(double(5))  # 10
-
-closures.py
-
-
-21. Декораторы
-    
-### 🧠 **Уровень 5: Продвинутые темы**
 
 #### 21. **`decorators.py`** - Декораторы
 
