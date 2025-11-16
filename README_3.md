@@ -16,7 +16,7 @@ print(f"{a} + {b} = {a + b}")
 
 calculator.py
 
-4. Погодный советчик
+3. Погодный советчик
    
 weather = "солнечно"
 
@@ -38,7 +38,7 @@ for i in range(1, 6):
 
 counter.py
 
-6. Бесконечные циклы
+5. Бесконечные циклы
 
 Бесконечный дождь из смайлов
 
@@ -60,57 +60,91 @@ launch_fireworks(3)
 
 functions.py
 
-7. password_generator.py - Генератор паролей
-python
+7. Генератор паролей
+   
 import random
+
 import string
 
 def generate_password(length=8):
-    characters = string.ascii_letters + string.digits
-    return ''.join(random.choice(characters) for _ in range(length))
+
+   characters = string.ascii_letters + string.digits
+   
+   return ''.join(random.choice(characters) for _ in range(length))
 
 print("Новый пароль:", generate_password())
-8. temperature_converter.py - Конвертер температур
-python
+
+password_generator.py
+
+8. Конвертер температур
+   
 def celsius_to_fahrenheit(celsius):
-    return celsius * 9/5 + 32
+   
+   return celsius * 9/5 + 32
 
 print("20°C =", celsius_to_fahrenheit(20), "°F")
-9. min_max_finder.py - Поиск min/max в списках
-python
+
+temperature_converter.py
+
+9. Поиск min/max в списках
+    
 def find_min(numbers):
-    return min(numbers)
+
+   return min(numbers)
 
 def find_max(numbers):
-    return max(numbers)
+
+   return max(numbers)
 
 numbers = [5, 2, 8, 1, 9]
+
 print("Минимальное:", find_min(numbers))
+
 print("Максимальное:", find_max(numbers))
-10. even_checker.py - Проверка чётности
-python
+
+min_max_finder.py
+
+10. Проверка чётности
+
 def is_even(number):
-    return number % 2 == 0
+    
+   return number % 2 == 0
 
 print(is_even(4))  # True
+
 print(is_even(5))  # False
+
+even_checker.py
+
 🗃️ Уровень 3: Структуры данных
-11. task_manager.py - Менеджер задач
-python
+
+11. Менеджер задач
+    
 tasks = ["купить хлеб", "позвонить маме"]
+
 task_status = {
-    "купить хлеб": "не сделано",
-    "позвонить маме": "в процессе"
+    
+   "купить хлеб": "не сделано",
+   
+   "позвонить маме": "в процессе"
+
 }
 
 # Добавление задачи
+
 def add_task(task, status="не сделано"):
-    tasks.append(task)
-    task_status[task] = status
+    
+   tasks.append(task)
+    
+   task_status[task] = status
 
 add_task("сделать ДЗ")
+
 print("Задачи:", tasks)
+
 print("Статусы:", task_status)
+
+
 12. library_system.py - Библиотека книг
 python
 library = {
