@@ -348,6 +348,11 @@ closures.py
 
 21. Декораторы
     
+### 🧠 **Уровень 5: Продвинутые темы**
+
+#### 21. **`decorators.py`** - Декораторы
+
+```python
 def log_time(func):
     def wrapper(*args):
         print(f"Запуск {func.__name__}...")
@@ -361,9 +366,6 @@ def calculate(a, b):
     return a + b
 
 print(calculate(2, 3))
-
-
-
 
 
 
