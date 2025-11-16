@@ -16,14 +16,20 @@ print(f"{a} + {b} = {a + b}")
 
 calculator.py
 
-4. weather_advisor.py - Погодный советчик
-python
+4. Погодный советчик
+   
 weather = "солнечно"
 
 if weather == "солнечно":
+    
     print("Идём гулять!")
+
 else:
+    
     print("Сидим дома.")
+
+weather_advisor.py 
+
 4. counter.py - Счётчик
 python
 for i in range(1, 6):
