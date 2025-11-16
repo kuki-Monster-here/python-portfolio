@@ -1,10 +1,12 @@
 🔰 Уровень 1: Основы Python
 
+
 1. "Привет, мир!"
 
 print("Привет, мир!")
 
 hello_world.py
+
 
 2.  Калькулятор
 
@@ -15,6 +17,7 @@ b = 3
 print(f"{a} + {b} = {a + b}")
 
 calculator.py
+
 
 3. Погодный советчик
    
@@ -30,6 +33,7 @@ else:
 
 weather_advisor.py 
 
+
 4. Счётчик
    
 for i in range(1, 6):
@@ -38,6 +42,7 @@ for i in range(1, 6):
 
 counter.py
 
+
 5. Бесконечные циклы
 
 Бесконечный дождь из смайлов
@@ -45,6 +50,7 @@ counter.py
 while True:
 
    print("☔", end=" ")
+   
 
 🛠️ Уровень 2: Функции и логика
 
@@ -59,6 +65,7 @@ def launch_fireworks(count):
 launch_fireworks(3)
 
 functions.py
+
 
 7. Генератор паролей
    
@@ -76,6 +83,7 @@ print("Новый пароль:", generate_password())
 
 password_generator.py
 
+
 8. Конвертер температур
    
 def celsius_to_fahrenheit(celsius):
@@ -85,6 +93,7 @@ def celsius_to_fahrenheit(celsius):
 print("20°C =", celsius_to_fahrenheit(20), "°F")
 
 temperature_converter.py
+
 
 9. Поиск min/max в списках
     
@@ -104,6 +113,7 @@ print("Максимальное:", find_max(numbers))
 
 min_max_finder.py
 
+
 10. Проверка чётности
 
 def is_even(number):
@@ -115,6 +125,7 @@ print(is_even(4))  # True
 print(is_even(5))  # False
 
 even_checker.py
+
 
 🗃️ Уровень 3: Структуры данных
 
@@ -175,6 +186,7 @@ print(library["1984"]["автор"])  # Джордж Оруэлл
 
 library_system.py
 
+
 13. Игровое поле (крестики-нолики)
 
 board = [
@@ -192,6 +204,7 @@ for row in board:
    print("|" + "|".join(row) + "|")
 
 tic_tac_toe.py
+
 
 14. Каталог товаров
     
@@ -211,6 +224,7 @@ for product in products:
 
 product_catalog.py
 
+
  🎮 Уровень 4: Игры и развлечения
 
 15. Казино-рулетка
@@ -229,6 +243,7 @@ else:
    print(f"Не угадал! Загаданное число: {number}")
 
 casino_roulette.py
+
 
 16. Угадай число
     
@@ -260,6 +275,7 @@ while True:
 
 guess_number.py 
 
+
 17. blackjack.py - Блэкджек (21)
 
 import random
@@ -277,6 +293,7 @@ print(f"Твои карты: {player_hand}, сумма: {sum(player_hand)}")
 print(f"Карты дилера: [{dealer_hand[0]}, ?]")
 
 blackjack.py 
+
 
 18. Игровой автомат
 
@@ -298,6 +315,7 @@ if result[0] == result[1] == result[2]:
 
 slot_machine.py
 
+
 🧠 Уровень 5: Продвинутые темы
 
 19. Рекурсивные списки
@@ -310,7 +328,8 @@ print(weird_list)  # [1, 2, 3, [...]]
 
 recursive_lists.py
 
-21. Замыкания
+
+20. Замыкания
 
 def multiplier(factor):
     
@@ -325,6 +344,7 @@ double = multiplier(2)
 print(double(5))  # 10
 
 closures.py
+
 
 21. Декораторы
     
