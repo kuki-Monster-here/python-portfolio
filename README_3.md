@@ -340,8 +340,8 @@ def multiplier(factor):
 double = multiplier(2)
 print(double(5))  # 10
 
+```
 #### 21. **`decorators.py`** - Декораторы
-
 ```python
 def log_time(func):
     def wrapper(*args):
