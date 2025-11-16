@@ -175,113 +175,182 @@ print(library["1984"]["автор"])  # Джордж Оруэлл
 
 library_system.py
 
-13. tic_tac_toe.py - Игровое поле (крестики-нолики)
-python
+13. Игровое поле (крестики-нолики)
+
 board = [
-    ["X", "O", " "],
-    [" ", "X", " "], 
-    ["O", " ", "X"]
+    
+   ["X", "O", " "],
+    
+   [" ", "X", " "], 
+    
+   ["O", " ", "X"]
+
 ]
 
 for row in board:
-    print("|" + "|".join(row) + "|")
-14. product_catalog.py - Каталог товаров
-python
+    
+   print("|" + "|".join(row) + "|")
+
+tic_tac_toe.py
+
+14. Каталог товаров
+    
 products = [
-    {"название": "Телефон", "цена": 20000, "в_наличии": True},
-    {"название": "Ноутбук", "цена": 50000, "в_наличии": False}
+    
+   {"название": "Телефон", "цена": 20000, "в_наличии": True},
+    
+   {"название": "Ноутбук", "цена": 50000, "в_наличии": False}
+
 ]
 
 for product in products:
-    if product["в_наличии"]:
-        print(f"{product['название']} - {product['цена']} руб.")
-🎮 Уровень 4: Игры и развлечения
-15. casino_roulette.py - Казино-рулетка
-python
+    
+   if product["в_наличии"]:
+        
+   print(f"{product['название']} - {product['цена']} руб.")
+
+product_catalog.py
+
+ 🎮 Уровень 4: Игры и развлечения
+
+15. Казино-рулетка
+ 
 import random
 
 number = random.randint(1, 10)
+
 guess = int(input("Угадай число от 1 до 10: "))
 
 if guess == number:
     print("Ты выиграл! 🎉")
+
 else:
-    print(f"Не угадал! Загаданное число: {number}")
-16. guess_number.py - Угадай число (компьютер загадывает)
-python
+    
+   print(f"Не угадал! Загаданное число: {number}")
+
+casino_roulette.py
+
+16. Угадай число
+    
 import random
 
 secret_number = random.randint(1, 100)
+
 attempts = 0
 
 while True:
-    guess = int(input("Угадай число от 1 до 100: "))
-    attempts += 1
     
-    if guess < secret_number:
-        print("Больше!")
-    elif guess > secret_number:
-        print("Меньше!")
-    else:
-        print(f"Поздравляю! Угадал за {attempts} попыток!")
-        break
+   guess = int(input("Угадай число от 1 до 100: "))
+   
+   attempts += 1
+    
+   if guess < secret_number:
+        
+   print("Больше!")
+    
+   elif guess > secret_number:
+      
+   print("Меньше!")
+    
+   else:
+      
+   print(f"Поздравляю! Угадал за {attempts} попыток!")
+        
+   break
+
+guess_number.py 
+
 17. blackjack.py - Блэкджек (21)
-python
+
 import random
 
 cards = [2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10, 11] * 4
+
 random.shuffle(cards)
 
 player_hand = [cards.pop(), cards.pop()]
+
 dealer_hand = [cards.pop(), cards.pop()]
 
 print(f"Твои карты: {player_hand}, сумма: {sum(player_hand)}")
+
 print(f"Карты дилера: [{dealer_hand[0]}, ?]")
-18. slot_machine.py - Игровой автомат
-python
+
+blackjack.py 
+
+18. Игровой автомат
+
 import random
 
 symbols = ["🍒", "🍋", "⭐", "💎", "7️⃣"]
 
 def spin():
-    return [random.choice(symbols) for _ in range(3)]
+    
+   return [random.choice(symbols) for _ in range(3)]
 
 result = spin()
+
 print("Результат:", " ".join(result))
 
 if result[0] == result[1] == result[2]:
-    print("ДЖЕКПОТ! 🎰")
+    
+   print("ДЖЕКПОТ! 🎰")
+
+slot_machine.py
+
 🧠 Уровень 5: Продвинутые темы
-19. recursive_lists.py - Рекурсивные списки
-python
+
+19. Рекурсивные списки
+
 weird_list = [1, 2, 3]
+
 weird_list.append(weird_list)
+
 print(weird_list)  # [1, 2, 3, [...]]
-20. closures.py - Замыкания
-python
+
+recursive_lists.py
+
+21. Замыкания
+
 def multiplier(factor):
-    def inner(number):
-        return number * factor
-    return inner
+    
+   def inner(number):
+      
+   return number * factor
+    
+   return inner
 
 double = multiplier(2)
+
 print(double(5))  # 10
-21. decorators.py - Декораторы
-python
+
+closures.py
+
+21. Декораторы
+    
 def log_time(func):
-    def wrapper(*args):
-        print(f"Запуск {func.__name__}...")
-        result = func(*args)
-        print("Готово!")
-        return result
-    return wrapper
+    
+   def wrapper(*args):
+        
+   print(f"Запуск {func.__name__}...")
+        
+   result = func(*args)
+        
+   print("Готово!")
+      
+   return result
+    
+   return wrapper
 
 @log_time
+
 def calculate(a, b):
-    return a + b
+    
+   return a + b
 
 print(calculate(2, 3)) 
 
+decorators.py
 
 
 
