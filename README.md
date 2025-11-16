@@ -45,13 +45,3 @@
 | 20 | [`closures.py`](closures.py) | Замыкания в Python | ⭐⭐⭐⭐ |
 | 21 | [`decorators.py`](decorators.py) | Декораторы функций | ⭐⭐⭐⭐⭐ |
 
-## 🚀 Как использовать
-
-```bash
-# Клонируй репозиторий:
-git clone https://github.com/твой-username/python-portfolio.git
-cd python-portfolio
-
-# Запускай любой проект:
-python hello_world.py
-python task_manager.py
